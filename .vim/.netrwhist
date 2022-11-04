@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/artem/.anydesk'
+let g:netrw_dirhist_5='/home/artem'
+let g:netrw_dirhist_4='/home/artem/.vim/plugged/vim-fugitive'
+let g:netrw_dirhist_3='/home/artem/test'
+let g:netrw_dirhist_2='/home/artem/Projects/mafin/src'
+let g:netrw_dirhist_1='/home/artem/mafin'
+let g:netrw_dirhist_0='/home/artem/mafin/finances'
+let g:netrw_dirhist_9='/home/artem/Projects/myfin/mafin/.git'
+let g:netrw_dirhist_8='/home/artem/Projects/ncurses'
+let g:netrw_dirhist_7='/etc/X11/xorg.conf.d'

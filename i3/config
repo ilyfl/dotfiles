@@ -29,18 +29,22 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+exec "parcellite" 
 
-exec "feh --bg-scale /home/artem/Downloads/Pictures/20898.jpg"
+exec "feh --bg-scale /home/artem/Pictures/background.jpg"
 
 
-exec_always "setxkbmap -layout us,ru"
-exec_always "setxkbmap -option 'grp:alt_shift_toggle'"
-exec "picom"
-exec "redshift"
+exec_always "setxkbmap -layout us,ru,pl && setxkbmap -option 'grp:alt_shift_toggle'"
+
+exec "redshift -l 46:30"
+exec "diodon"
+exec "thunderbird"
+exec "/usr/lib/kdeconnectd"
 
 bindsym --release Print exec "scrot -m '/home/artem/Pictures/screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'"
 bindsym --release Shift+Print exec "scrot -s '/home/artem/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 bindsym --release $mod+Shift+Print exec "scrot -u -d 4 '/home/artem/Pictures/screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
+bindsym --release $mod+L exec "slock"
 
 
 # Use pactl to adjust volume in PulseAudio.
@@ -59,7 +63,7 @@ bindsym XF86MonBrightnessDown exec light -U 2 # decrease screen brightness
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill

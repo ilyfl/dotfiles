@@ -8,6 +8,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'easymotion/vim-easymotion'
+Plug 'vbextreme/dumpx'
 
 call plug#end()
 
@@ -16,8 +17,9 @@ set nocompatible
 syntax on
 filetype plugin indent on
 set number
+set ruler
 set ttyfast
-set scrolloff=5
+set scrolloff=2
 set hlsearch
 set incsearch
 set ignorecase
